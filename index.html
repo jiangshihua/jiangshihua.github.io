@@ -30,6 +30,33 @@
       测试GA4
     </h1>
     <button class="test">点击测试GA4</button>
+    
+   
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <!-- Add the standard Performance Monitoring library -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-performance.js"></script>
+    
+    <!-- Previously loaded Firebase SDKs -->
+
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAJDLKSaGci5i1PYpHEyEOZ9xegD3PDEjo",
+        authDomain: "kp-web-test.firebaseapp.com",
+        projectId: "kp-web-test",
+        storageBucket: "kp-web-test.appspot.com",
+        messagingSenderId: "270991408493",
+        appId: "1:270991408493:web:5396765eb2ce3baebd6e64"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Initialize Performance Monitoring and get a reference to the service
+      var perf = firebase.performance();
+    </script>
   </body>  
   
 </html>  
