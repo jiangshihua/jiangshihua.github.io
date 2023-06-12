@@ -40,8 +40,14 @@
     <h1>
       测试GA411
     </h1>
-    <button class="test">点击测试GA4</button>
+    <button class="test" onclick="click()" >点击测试GA4</button>
     
+    <script>
+      function click() {
+        alert("点击");
+        gio('track', "click");
+      }
+    </script>
    
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
